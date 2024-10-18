@@ -1,0 +1,86 @@
+@font-face {
+    font-family: Kavoon;
+    src: url(./fonts/Kavoon/Kavoon-Regular.ttf);
+}
+
+@font-face {
+    font-family: Jua;
+    src: url(./fonts/Jua-Regular.ttf);
+}
+
+header{
+    display: flex;
+    background-color: #76BAFD;
+    font-family: Kavoon;
+    justify-content: center;
+    color: #FFE8A3;
+    text-shadow: 1px 1px 2px rgb(90, 90, 90);
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #C1C1C1;
+    height: 40px;
+    font-family: Jua;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+.reviewsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+.review{
+    border: 3px solid #0c0c0c;
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    grid-template-rows: /* 1fr 5fr */ auto;
+    grid-template-areas: "reviewInfo reviewInfo" "reviewImage reviewText";
+
+    height: 10%;
+    /* max-height: 400px; */
+    padding: 10px;
+
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 15px;
+
+    background-color: #FFFFFF;
+}
+.review h2, p, h3, h4 {
+    margin: 5px;
+}
+.reviewInfo {
+    grid-area: reviewInfo;
+}
+.reviewText{
+    grid-area: reviewText;
+}
+.reviewText > p {text-indent: 32px;}
+
+.reviewImage{
+    grid-area: reviewImage;
+    height: 100%;
+    width: 100%;
+}
+.reviewImage > img {
+    width: 100%;
+    height: 100%;
+    max-height: 250px;
+    min-height: 50px;
+    
+}
