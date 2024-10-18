@@ -1,0 +1,80 @@
+@font-face {
+    font-family: Kavoon;
+    src: url(./fonts/Kavoon/Kavoon-Regular.ttf);
+}
+
+@font-face {
+    font-family: Jua;
+    src: url(./fonts/Jua-Regular.ttf);
+}
+
+header{
+    display: flex;
+    background-color: #76BAFD;
+    font-family: Kavoon;
+    justify-content: center;
+    color: #FFE8A3;
+    text-shadow: 1px 1px 2px rgb(90, 90, 90);
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #C1C1C1;
+    height: 40px;
+    font-family: Jua;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+main{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #E7E7E7;
+    border-radius: 3%;
+}
+
+div img{
+    width: 200px;
+    height: 200px;
+}
+
+div h4 {
+    width: 200px;
+}
+
+h3{
+    margin: 20px 70px;
+}
+
+.customer-favs{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+
+.customer-favs div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    border: solid 5px black;
+}
+
+body{
+    background-image: url("./images/cloudBackgroud.svg");   
+}
