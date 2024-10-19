@@ -38,14 +38,6 @@ nav a:hover{
     text-decoration: underline;
 }
 
-main{
-    display: flex;
-    width: 90%;
-    margin: 0 auto;
-    background-color: #E7E7E7;
-    border-radius: 3%;
-}
-
 div img{
     width: 200px;
     height: 200px;
@@ -64,6 +56,10 @@ h3{
     flex-wrap: wrap;
     padding: 20px;
     justify-content: space-evenly;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #E7E7E7;
+    border-radius: 15px;
 }
 
 .customer-favs div{
@@ -77,4 +73,31 @@ h3{
 
 body{
     background-image: url("./images/cloudBackgroud.svg");   
+}
+
+.jumbo-ducks{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #E7E7E7;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.jumbo-ducks div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    border: solid 5px black;
+    width: 250px;
+}
+
+.jumbo-ducks img{
+    width: 250px;
+    height: 250px;
 }
