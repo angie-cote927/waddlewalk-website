@@ -1,0 +1,159 @@
+@font-face {
+    font-family: Kavoon;
+    src: url(./fonts/Kavoon/Kavoon-Regular.ttf);
+}
+@font-face {
+    font-family: Jua;
+    src: url(./fonts/Jua-Regular.ttf);
+}
+@font-face {
+    font-family: Atma;
+    src: url("./fonts/Atma/Atma-Regular.ttf");
+}
+@font-face {
+    font-family: Atlarge;
+    src: url("./fonts/Atma/Atma-Bold.ttf");
+}
+
+h1 a{
+    text-decoration: none;
+    color: #FFE8A3;
+    text-shadow: 1px 1px 2px rgb(90, 90, 90);;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: Atlarge;
+}
+p{
+    font-family: Atma;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+header{
+    display: flex;
+    background-color: #76BAFD;
+    font-family: Kavoon;
+    justify-content: center;
+    color: #FFE8A3;
+    text-shadow: 1px 1px 2px rgb(90, 90, 90);
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #C1C1C1;
+    height: 40px;
+    font-family: Jua;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    margin-top: 0;
+    z-index: 4;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+.active {
+    color: rgb(17, 106, 128);
+    text-decoration: underline;
+}
+.active:hover{ text-decoration: none; }
+
+body{
+    background-image: url("./images/cloudBackgroud.svg");
+}
+
+
+.servicesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 96%;
+    margin: auto;
+
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.service{
+    border: 3px solid #0c0c0c;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr .5fr 1fr;
+    grid-template-areas: "serviceImage" "serviceInfo" "serviceText";
+
+    height: 48rem;
+    min-height: 100px;
+
+    max-width: 50rem;
+
+    padding: 10px;
+
+    margin: 3px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 15px;
+
+    background-color: #E7E7E7;
+}
+@media (max-width: 650px) {
+    .servicesContainer{
+        width: 97.5%;
+    }
+}
+.service h2, p, h3, h4 {
+    margin: 5px;
+}
+.serviceInfo {
+    grid-area: serviceInfo;
+}
+.serviceText{
+    grid-area: serviceText;
+    overflow-y: auto;
+}
+.serviceText > p {text-indent: 32px;}
+
+.serviceImage{
+    grid-area: serviceImage;
+    height: 100%;
+    width: 100%;
+}
+.serviceImage > img {
+    max-width: 100%;
+    max-height: 500px;
+
+    display: block;
+    margin: auto;
+}
+.serviceText p {
+    font-size: 18px;
+}
+
+
+footer{
+    background-color: #76BAFD;
+    width: 96%;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 15px;
+}
+.tiny-duck1{
+    width: 61px;
+    height: 48px;
+    float: right;
+}
+.tiny-duck2{
+    width: 61px;
+    height: 48px;
+    float: right;
+}
+.duck{
+    width: 100px;
+    height: 80px;
+    float: right;
+}
