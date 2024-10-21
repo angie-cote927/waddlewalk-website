@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./buy-form.css">
+    <title>What the Duck - Buy Now!</title>
+</head>
+<body>
+    <header>
+        <h1><a href="./home.html">What the Duck?!</a></h1>
+    </header>
+    <nav>
+        <a href="#jumbo-ducks"">Jumbo Ducks</a>
+        <a href="#medium-ducks">Medium Ducks</a>
+        <a href="#small-ducks">Small Ducks</a>
+        <a href="#premium-ducks">Premium Ducks</a>
+        <a href="./gallery.html">Gallery</a>
+        <a href="./services.html">Services</a>
+        <a href="#staff-picks">Staff Picks</a>
+    </nav>
+    <main>
+        <form action="#">
+            <div class="customer">
+                <h3>Customer Info</h3>
+                <label for="email">Email: <abbr title="required">*</abbr></label>
+                <input type="email" placeholder="Type here:" name="email"><br>
+                <label for="number">Phone Number: <abbr title="required">*</abbr></label>
+                <input type="tel" placeholder="Type here:" name="number">
+                <label for="newsletter">Subscribe to our newsletter?</label>
+                <input type="checkbox" name="newsletter" id="newsletter">
+            </div>
+            <div class="shipping">
+                <h3>Shipping</h3>
+                <label for="first-name">First Name: <abbr title="required">*</abbr></label>
+                <input required type="text" name="first-name" placeholder="Type here:">
+                <label for="last-name">Last Name: <abbr title="required">*</abbr></label>
+                <input required type="text" name="last-name" placeholder="Type here:"><br>
+                <label for="address">Address: <abbr title="required">*</abbr></label>
+                <input required type="text" name="address" placeholder="Type here:">
+                <label for="apartment">Apartment/Suite/Building (Optional):</label>
+                <input type="text" name="apartment" placeholder="Type here:"><br>
+                <label for="company">Company Name (Optional):</label>
+                <input type="text" name="company" placeholder="Type here:"><br>
+                <label for="city">City: <abbr title="required">*</abbr></label>
+                <input required type="text" name="city" placeholder="Type here:">
+                <label for="state">State/Province: <abbr title="required">*</abbr></label>
+                <input required type="text" name="state" placeholder="Type here:">
+                <label for="postal">Postal Code: <abbr title="required">*</abbr></label>
+                <input required type="text" name="postal" placeholder="Type here:">
+            </div>
+            <div class="payment">
+                <label for="card">Card Type: <abbr title="required">*</abbr></label>
+                <select required name="card" id="card">
+                    <option value="1">Choose One</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="visa">Visa</option>
+                    <option value="cap1">Capital One</option>
+                    <option value="chase">Chase Bank</option>
+                    <option value="discover">Discover</option>
+                </select>
+                <label for="card#">Card Number: <abbr title="required">*</abbr></label>
+                <input required type="tel" name="card#" placeholder="Type here:">
+                <label for="expiration">Expiration: <abbr title="required">*</abbr></label>
+                <input required type="date" name="expiration">
+                <label for="cvv">CVV: <abbr title="required">*</abbr></label>
+                <input type="tel" name="cvv" placeholder="Type here:">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <img src="./images/DuckIcon.png" alt="Big Duck" class="duck">
+        <img src="./images/DuckIcon.png" alt="Tiny Duck 1" class="tiny-duck1">
+        <img src="./images/DuckIcon.png" alt="Tiny Duck 2" class="tiny-duck2">
+        <address>123 Imaginary Lane<br>
+            Fictionville, FS 12345<br>
+            United States</address>
+            <address>555-987-6543</address>
+            <a href="mailto:whattheduck@hotmail.com">whattheduck@hotmail.com</a>
+    </footer>
+</body>
+</html>

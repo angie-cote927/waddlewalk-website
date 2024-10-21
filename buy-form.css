@@ -1,0 +1,158 @@
+@font-face {
+    font-family: Kavoon;
+    src: url(./fonts/Kavoon/Kavoon-Regular.ttf);
+}
+
+@font-face {
+    font-family: Jua;
+    src: url(./fonts/Jua-Regular.ttf);
+}
+
+@font-face {
+    font-family: Atma;
+    src: url("./fonts/Atma/Atma-Regular.ttf");
+}
+
+@font-face {
+    font-family: Atlarge;
+    src: url("./fonts/Atma/Atma-Bold.ttf");
+}
+
+@font-face {
+    font-family: Pangolin;
+    src: url("./fonts/Pangolin/Pangolin-Regular.ttf");
+}
+
+h1 a{
+    text-decoration: none;
+    color: #FFE8A3;
+    text-shadow: 1px 1px 2px rgb(90, 90, 90);;
+}
+
+body{
+    background-image: url('./images/cloudBackgroud.svg');
+}
+
+main{
+    display: flex;
+}
+
+header{
+    display: flex;
+    background-color: #76BAFD;
+    font-family: Kavoon;
+    justify-content: center;
+    color: #FFE8A3;
+    text-shadow: 1px 1px 2px rgb(90, 90, 90);
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #C1C1C1;
+    height: 40px;
+    font-family: Jua;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    margin-bottom: 20px;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 40%;
+    width: 40%;
+    border-radius: 15px;
+    margin: 0 auto;
+    background-color: #C1C1C1;
+}
+
+.customer{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    font-family: Pangolin;
+}
+
+.customer input{
+    margin-bottom: 5px;
+    width: 200px;
+}
+
+.shipping{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    font-family: pangolin;
+}
+
+.shipping input{
+    margin-bottom: 5px;
+    width: 200px;
+}
+
+abbr{
+    text-decoration: none;
+    color: red;
+}
+
+.payment{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    font-family: pangolin;
+}
+
+.payment input{
+    margin-bottom: 5px;
+    width: 200px;
+}
+
+select{
+    width: 100px;
+}
+
+input[type="date"]{
+    width: 100px;
+}
+
+footer{
+    background-color: #76BAFD;
+    width: 96%;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 15px;
+}
+
+.tiny-duck1{
+    width: 61px;
+    height: 48px;
+    float: right;
+}
+
+.tiny-duck2{
+    width: 61px;
+    height: 48px;
+    float: right;
+}
+
+.duck{
+    width: 100px;
+    height: 80px;
+    float: right;
+}

@@ -18,6 +18,16 @@
     src: url("./fonts/Atma/Atma-Bold.ttf");
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+h1 a{
+    text-decoration: none;
+    color: #FFE8A3;
+    text-shadow: 1px 1px 2px rgb(90, 90, 90);;
+}
+
 header{
     display: flex;
     background-color: #76BAFD;
@@ -126,7 +136,7 @@ h3{
 }
 
 body{
-    background-image: url("./images/cloudBackgroud.svg");   
+    background-image: url("./images/cloudBackgroud.svg");
 }
 
 .jumbo-ducks{
@@ -149,6 +159,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
     margin: 20px;
     border: solid 5px black;
@@ -218,6 +229,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
     margin: 20px;
     border: solid 5px black;
@@ -302,6 +314,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
     margin: 20px;
     border: solid 5px black;
@@ -386,6 +399,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
     margin: 20px;
     border: solid 5px black;
@@ -458,7 +472,7 @@ body{
     grid-template-rows: 100px 438px;
     justify-content: center;
     column-gap: 30px;
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
     background-color: #E7E7E7;
     border-radius: 15px;
@@ -470,6 +484,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
     margin: 20px;
     border: solid 5px black;
@@ -532,6 +547,7 @@ a[href="./buy-form.html"]{
     color: black;
     text-decoration: none;
     border-radius: 30px;
+    width: 100px;
 }
 
 a[href="./buy-form.html"]:hover{
