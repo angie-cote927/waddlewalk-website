@@ -2,16 +2,32 @@
     font-family: Kavoon;
     src: url(./fonts/Kavoon/Kavoon-Regular.ttf);
 }
-
 @font-face {
     font-family: Jua;
     src: url(./fonts/Jua-Regular.ttf);
+}
+@font-face {
+    font-family: Atma;
+    src: url("./fonts/Atma/Atma-Regular.ttf");
+}
+@font-face {
+    font-family: Atlarge;
+    src: url("./fonts/Atma/Atma-Bold.ttf");
 }
 
 h1 a{
     text-decoration: none;
     color: #FFE8A3;
     text-shadow: 1px 1px 2px rgb(90, 90, 90);;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: Atlarge;
+}
+p{
+    font-family: Atma;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 header{
@@ -44,7 +60,7 @@ nav a:hover{
     text-decoration: underline;
 }
 .active {
-    color: purple;
+    color: rgb(17, 106, 128);
     text-decoration: underline;
 }
 .active:hover{ text-decoration: none; }
@@ -56,9 +72,11 @@ body{
 .reviewsContainer{
     display: flex;
     flex-wrap: wrap;
-    width: 95%;
+    width: 96%;
     margin: auto;
 
+    align-content: center;
+    align-items: center;
     justify-content: space-around;
 }
 .review{
@@ -71,7 +89,7 @@ body{
     height: 12%;
     min-height: 100px;
 
-    max-width: 750px;
+    max-width: 550px;
 
     padding: 10px;
 
@@ -98,6 +116,7 @@ body{
 }
 .reviewText{
     grid-area: reviewText;
+    overflow-y: auto;
 }
 .reviewText > p {text-indent: 32px;}
 
@@ -126,7 +145,7 @@ body{
     padding: 10px;
     margin: 3px auto 20px auto;/* top right bottom left */
 
-    background-color: #FFFFFF;
+    background-color: #E7E7E7;
 
     width: 90%;
 }
@@ -147,15 +166,51 @@ body{
 
 .galleryVideo {
     width: 90%;
-    height: 400px;
-    background-color: #FFFFFF;
+    /* height: 400px; */
+    background-color: #E7E7E7;
     border: solid 3px #0c0c0c;
     border-radius: 15px;
     margin: auto;
     overflow: hidden;
-}
 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr .1fr;
+    grid-template-areas: "video" "text";
+}
+.video{
+    grid-area: video;
+}
+.videoInfo{
+    grid-area: text;
+    padding: 10px;
+}
 .galleryVideo video{
     width: 100%;
     height: 100%;
+    max-height: 500px;
+    margin: 5px;
+}
+
+footer{
+    background-color: #76BAFD;
+    width: 96%;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 15px;
+}
+.tiny-duck1{
+    width: 61px;
+    height: 48px;
+    float: right;
+}
+.tiny-duck2{
+    width: 61px;
+    height: 48px;
+    float: right;
+}
+.duck{
+    width: 100px;
+    height: 80px;
+    float: right;
 }
