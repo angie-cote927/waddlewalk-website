@@ -131,6 +131,26 @@ input[type="date"]{
     width: 100px;
 }
 
+main a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 2rem;
+    background-color: #959090;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: #484646;
+    text-decoration: none;
+    color: black;
+    margin-top: 15px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    font-family: Atlarge;
+}
+
 footer{
     background-color: #76BAFD;
     width: 96%;
